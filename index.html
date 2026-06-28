@@ -16,6 +16,7 @@
     <div class="nav-links">
       <a href="#letter">Letter</a>
       <a href="#journey">Journey</a>
+      <a href="#builder">Builder</a>
       <a href="#finale">Finale</a>
     </div>
   </nav>
@@ -49,59 +50,89 @@
         <div class="timeline" id="timeline">
           <article class="timeline-card reveal" tabindex="0">
             <div class="timeline-icon">🏢</div>
-            <img class="timeline-photo" src="assets/journey-1.jpeg" alt="Family celebration photo">
             <div>
               <h3>Building Your Business</h3>
               <p class="collapsed-copy">Vision, patience, and the courage to begin.</p>
               <div class="expanded-copy">
+                <div class="photo-placeholder">Add business photo</div>
                 <p>A chapter shaped by hard work, reputation, and the foundations you built for everyone around you.</p>
               </div>
             </div>
           </article>
           <article class="timeline-card reveal" tabindex="0">
             <div class="timeline-icon">⚽</div>
-            <img class="timeline-photo" src="assets/journey-2.jpeg" alt="Family day photo">
             <div>
               <h3>Your Love For Football</h3>
               <p class="collapsed-copy">The game, the passion, the joy.</p>
               <div class="expanded-copy">
+                <div class="photo-placeholder">Add football photo</div>
                 <p>Football has always carried your energy: competitive, loyal, joyful, and full of unforgettable moments.</p>
               </div>
             </div>
           </article>
           <article class="timeline-card reveal" tabindex="0">
             <div class="timeline-icon">✈️</div>
-            <img class="timeline-photo" src="assets/journey-3.jpeg" alt="Family travel photo">
             <div>
               <h3>Exploring The World</h3>
               <p class="collapsed-copy">Cities, stories, and memories.</p>
               <div class="expanded-copy">
+                <div class="photo-placeholder">Add travel photo</div>
                 <p>Every place you visited became another story, another lesson, and another memory for the family.</p>
               </div>
             </div>
           </article>
           <article class="timeline-card reveal" tabindex="0">
             <div class="timeline-icon">🤝</div>
-            <img class="timeline-photo" src="assets/journey-4.jpeg" alt="Birthday family photo">
             <div>
               <h3>Building Relationships</h3>
               <p class="collapsed-copy">Respect earned through character.</p>
               <div class="expanded-copy">
+                <div class="photo-placeholder">Add people photo</div>
                 <p>You taught us that success is not only what you own, but the trust and respect people feel around you.</p>
               </div>
             </div>
           </article>
           <article class="timeline-card reveal" tabindex="0">
             <div class="timeline-icon">👨‍👩‍👦</div>
-            <img class="timeline-photo" src="assets/journey-5.jpeg" alt="Graduation family photo">
             <div>
               <h3>Building A Family</h3>
               <p class="collapsed-copy">The greatest achievement of all.</p>
               <div class="expanded-copy">
+                <div class="photo-placeholder">Add family photo</div>
                 <p>Through every season, you gave us love, stability, protection, and the kind of example that lasts forever.</p>
               </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="builder" class="builder section">
+      <div class="section-shell">
+        <p class="eyebrow reveal">Real Estate Empire</p>
+        <h2 class="section-title reveal">The Builder</h2>
+        <div class="builder-grid">
+          <div class="skyline-panel reveal" aria-label="Animated city skyline">
+            <div class="city">
+              <span style="--h: 42%; --d: .1s"></span>
+              <span style="--h: 68%; --d: .35s"></span>
+              <span style="--h: 52%; --d: .6s"></span>
+              <span style="--h: 84%; --d: .85s"></span>
+              <span style="--h: 58%; --d: 1.1s"></span>
+              <span style="--h: 72%; --d: 1.35s"></span>
+              <span style="--h: 48%; --d: 1.6s"></span>
+            </div>
+          </div>
+          <div class="builder-copy reveal">
+            <p>Every building starts with a foundation.</p>
+            <p>The same is true for success.</p>
+            <p>Through vision, determination, and hard work, you've built something meaningful and inspired everyone around you.</p>
+            <div class="counters">
+              <div><strong data-count="24">0</strong><span>🏢 Properties Built</span></div>
+              <div><strong data-count="20">0</strong><span>📈 Years Of Experience</span></div>
+              <div><strong data-count="500">0</strong><span>🤝 Clients Helped</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -113,6 +144,31 @@
         <div class="field reveal">
           <button class="football-ball" id="footballBall" aria-label="Show a football quote">⚽</button>
           <p id="footballQuote" class="quote">Click the ball for a quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel" class="travel section">
+      <div class="section-shell">
+        <p class="eyebrow reveal">World Travel</p>
+        <h2 class="section-title reveal">The Explorer</h2>
+        <div class="map-panel reveal">
+          <svg class="route-map" viewBox="0 0 900 420" aria-hidden="true">
+            <path class="continent" d="M120 160c45-70 115-65 155-28 30 28 24 82-15 108-56 37-156 11-170-42-4-15 5-28 30-38Z"/>
+            <path class="continent" d="M365 92c78-34 182-13 225 42 48 61 8 150-81 170-84 19-178-24-201-91-18-53 3-98 57-121Z"/>
+            <path class="continent" d="M653 173c65-26 129-8 157 42 30 52 3 110-60 132-57 20-122-1-150-49-31-53-8-103 53-125Z"/>
+            <path class="route" d="M330 245 C420 135, 515 125, 620 190 S745 230, 775 180"/>
+            <path class="route route-two" d="M330 245 C470 305, 565 300, 680 260"/>
+          </svg>
+          <button class="marker cairo active" data-city="Cairo">📍 Cairo</button>
+          <button class="marker dubai" data-city="Dubai">📍 Dubai</button>
+          <button class="marker london" data-city="London">📍 London</button>
+          <button class="marker paris" data-city="Paris">📍 Paris</button>
+          <button class="marker rome" data-city="Rome">📍 Rome</button>
+          <div class="memory-card" id="memoryCard">
+            <h3>Cairo</h3>
+            <p>Add a special travel memory or photo here.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -158,7 +214,7 @@
         <div class="gift-message" id="giftMessage">
           <h2>Thank You Dad</h2>
           <p>For every sacrifice.<br>For every lesson.<br>For every opportunity.<br>For every moment.</p>
-          <strong>We are who we are because of you.</strong>
+          <strong>I am who I am because of you.</strong>
           <span>❤️</span>
         </div>
       </div>

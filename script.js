@@ -1,3 +1,37 @@
+const SITE_PASSWORD = "Walid";
+const ACCESS_KEY = "fathersDayAccess";
+
+const passwordGate = document.getElementById("passwordGate");
+const passwordForm = document.getElementById("passwordForm");
+const passwordInput = document.getElementById("passwordInput");
+const passwordError = document.getElementById("passwordError");
+
+const unlockSite = () => {
+  passwordGate.classList.add("hidden");
+  document.body.classList.remove("locked");
+};
+
+document.body.classList.add("locked");
+
+if (sessionStorage.getItem(ACCESS_KEY) === "granted") {
+  unlockSite();
+} else {
+  passwordInput.focus();
+}
+
+passwordForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (passwordInput.value === SITE_PASSWORD) {
+    sessionStorage.setItem(ACCESS_KEY, "granted");
+    unlockSite();
+    return;
+  }
+
+  passwordError.textContent = "Incorrect password. Please try again.";
+  passwordInput.value = "";
+  passwordInput.focus();
+});
+
 const letterText = `Dad,
 
 There are some people who build houses.
